@@ -278,7 +278,7 @@ describe('Tracked Set', () => {
       assert.equal(count, 1);
     });
 
-    test.only('clear', () => {
+    test('clear', () => {
       const set = new TrackedSet(['foo', 123]);
 
       let count = 0;

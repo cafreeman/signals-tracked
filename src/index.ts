@@ -36,7 +36,6 @@ export class TrackedSet<T = unknown> implements Set<T> {
 
   // **** KEY GETTERS ****
   has(value: T): boolean {
-    console.log('has');
     this.storageFor(value).value;
 
     return this.vals.has(value);
